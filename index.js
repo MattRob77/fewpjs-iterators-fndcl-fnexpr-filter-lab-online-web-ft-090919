@@ -5,6 +5,5 @@ function findMatching(drivers, toMatch) {
 
 
 function fuzzyMatch(drivers, toMatch) { 
-  
-  
+  return drivers.filter(match => match.toLowerCase().indexOf(toMatch.toLowerCase()) === 0)
 } 
